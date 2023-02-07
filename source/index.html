@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div id="nav-menu">
+      <nav>
+        <h1>DHEERAJ</h1>
+        <ul id="nav-ul">
+          <li class="nav-link home">Home</li>
+          <li class="nav-link about">About</li>
+          <li class="nav-link skills">Skills</li>
+          <li class="nav-link projects">Projects</li>
+          <li class="nav-link contact">Contact</li>
+          <li class="nav-link resume">Resume</li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+    <div id="home"></div>
+    <div id="about" class="about section"></div>
+    <div id="skills"></div>
+    <div id="projects"></div>
+    <div id="contact"></div>
+  </body>
+</html>
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector("#nav-ul");
+
+  hamburger.addEventListener("click", mobileMenu);
+
+  function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  }
+
+  const navLink = document.querySelectorAll(".nav-link");
+
+  navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+  function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }
+</script>
