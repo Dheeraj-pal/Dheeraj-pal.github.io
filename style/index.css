@@ -136,7 +136,7 @@ nav > h1 {
   color: #dd6414;
 }
 
-#about-main{
+#about-main {
   display: flex;
   width: 70%;
   margin: auto;
@@ -144,7 +144,7 @@ nav > h1 {
   /* border: 1px solid; */
   margin-top: 50px;
 }
-#about-main>.abt-img{
+#about-main > .abt-img {
   width: 100%;
   /* border: 1px solid; */
   text-align: center;
@@ -152,13 +152,13 @@ nav > h1 {
   justify-content: center;
   border-radius: 20px;
 }
-#about-main>.abt-txt{
+#about-main > .abt-txt {
   width: 100%;
   /* margin: auto; */
   /* border: 1px solid; */
   margin-right: 50px;
 }
-#about-main>.abt-img>img{
+#about-main > .abt-img > img {
   border-radius: 20px;
   height: 400px;
   width: 250px;
@@ -166,19 +166,11 @@ nav > h1 {
   -webkit-filter: grayscale(90%);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#about-main>.abt-img>img:hover{
+#about-main > .abt-img > img:hover {
   filter: grayscale(100%);
   -webkit-filter: grayscale(0%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 850px) {
   #nav-ul {
