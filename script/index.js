@@ -19,5 +19,5 @@ function closeMenu() {
 
 function NewTab() {
   window.open(
-  "./resume/Dheeraj_pal_Resume.pdf", "_blank");
+  "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed", "_blank");
 }
