@@ -61,6 +61,8 @@ nav > h1 {
 }
 
 #home {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   z-index: -1;
@@ -139,12 +141,12 @@ nav > h1 {
   width: 70%;
   margin: auto;
   justify-content: center;
-  border: 1px solid;
+  /* border: 1px solid; */
   margin-top: 50px;
 }
 #about-main>.abt-img{
   width: 100%;
-  border: 1px solid;
+  /* border: 1px solid; */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -152,8 +154,8 @@ nav > h1 {
 }
 #about-main>.abt-txt{
   width: 100%;
-  margin: auto;
-  border: 1px solid;
+  /* margin: auto; */
+  /* border: 1px solid; */
   margin-right: 50px;
 }
 #about-main>.abt-img>img{
