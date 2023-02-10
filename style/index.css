@@ -1,12 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Pohome-imgins", sans-serif;
+  font-family: "Pohome-imageins", sans-serif;
 }
 :root {
   --primary-color: #000000;
   --secondary-color: #fff;
-  --tertiary-color: #262626;
 }
 html.dark {
   --primary-color: #fff;
@@ -165,16 +164,16 @@ nav > h1 {
   background-color: #241277;  
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.home-img {
+.home-image {
   height: 400px;
   margin-left: 22.135416666666668vw;
   border-radius: 50%;
   user-select: none;
 }
-.home-img:hover {
+.home-image:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.home-img > img {
+.home-image > img {
   height: 400px;
   width: 400px;
   border-radius: 50%;
@@ -342,10 +341,10 @@ nav > h1 {
     justify-content: center;
     margin-bottom: 50px;
   }
-  .home-img {
+  .home-image {
     margin: auto;
   }
-  .home-img>img{
+  .home-image>img{
     height: 300px;
     width: 300px;
     margin-top: 30px;
