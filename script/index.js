@@ -19,22 +19,34 @@ function closeMenu() {
 
 function NewTab() {
   window.open(
-  "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed", "_blank");
+    "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed",
+    "_blank"
+  );
 }
 
 // dark mode
-
+let bgimg = document.getElementById("particles-js");
+let navimg = document.getElementById("nav-menu");
 const toggle = document.querySelector(".toggle");
 toggle.addEventListener("click", (e) => {
   const html = document.querySelector("html");
   if (html.classList.contains("dark")) {
     html.classList.remove("dark");
-    e.target.innerHTML = "Dark";
+    navimg.style.backgroundImage =
+      "url('https://images.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
+    bgimg.style.backgroundImage =
+      "url('https://images.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
+    e.target.innerHTML = "Light";
   } else {
     html.classList.add("dark");
-    e.target.innerHTML = "Light";
+    navimg.style.backgroundImage =
+      "url('https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
+    bgimg.style.backgroundImage =
+      "url('https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
+    e.target.innerHTML = "Dark";
   }
 });
+ 
 
 let docTitle = document.title;
 window.addEventListener("blur", () => {
@@ -43,3 +55,16 @@ window.addEventListener("blur", () => {
 window.addEventListener("focus", () => {
   document.title = docTitle;
 });
+
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    document.querySelector("#particles-js").style.height = "900px"
+  } else{
+    document.querySelector("#particles-js").style.height = "750px"
+  }
+}
+
+var x = window.matchMedia("(max-width: 850px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes

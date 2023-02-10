@@ -28,9 +28,16 @@
           <li class="nav-link skills"><a href="#skills">Skills</a></li>
           <li class="nav-link projects"><a href="#projects">Projects</a></li>
           <li class="nav-link contact"><a href="#contact">Contact</a></li>
-          <li class="nav-link resume"><a  id="resume-button-1" onclick="NewTab()" href="./resume/Dheeraj_Pal_Resume.pdf" download="Dheeraj_Pal_Resume">Resume</a></li>
-          <li><button class="toggle">Dark</button></li>
-          <div class="cursor"></div> 
+          <li class="nav-link resume">
+            <a
+              id="resume-button-1"
+              onclick="NewTab()"
+              href="./resume/Dheeraj_Pal_Resume.pdf"
+              download="Dheeraj_Pal_Resume"
+              >Resume</a
+            >
+          </li>
+          <!-- <li><button class="toggle">Light</button></li> -->
         </ul>
         <div class="hamburger">
           <span class="bar"></span>
@@ -38,7 +45,17 @@
           <span class="bar"></span>
         </div>
       </nav>
+      <div class="cursor"><button class="toggle">Light</button></div>
     </div>
+
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <!-- stats - count particles -->
+    <div class="count-particles"></div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <!------------------------ navbar ends------------------------------>
 
     <!------------------------ home starts------------------------------>
@@ -48,8 +65,13 @@
           Hi There,<br />
           I'm Dheeraj <span>Pal</span>
         </h2>
-        <p>I am a <span class="typing-text">Full Stack Web Developer</span></p>
-        <a onclick="NewTab()" id="resume-button-2" href="./resume/Dheeraj_Pal_Resume.pdf" download="Dheeraj_Pal_Resume" class="btn"
+        <p id="content-p">I am a <span class="typing-text">Full Stack Web Developer</span></p>
+        <a
+          onclick="NewTab()"
+          id="resume-button-2"
+          href="./resume/Dheeraj_Pal_Resume.pdf"
+          download="Dheeraj_Pal_Resume"
+          class="btn"
           ><span>Resume</span>
           <i class="fas fa-arrow-circle-down"></i>
         </a>
@@ -94,7 +116,11 @@
         </div>
       </div>
       <div class="home-image" data-tilt>
-        <img class="home-img" src="\image\profile_pic.png" alt="profile_picture" />
+        <img
+          class="home-img"
+          src="\image\profile_pic.png"
+          alt="profile_picture"
+        />
       </div>
     </div>
 
@@ -107,10 +133,12 @@
         <i class="fa-solid fa-user"></i>About <span>Me</span>
       </div>
       <div id="about-main">
-        <div class="abt-img"><img data-tilt src="./image/pic.jpg" alt="pic" /></div>
+        <div class="abt-img">
+          <img data-tilt src="./image/pic.jpg" alt="pic" />
+        </div>
         <div class="abt-txt">
-          <h2>I'm Dheeraj</h2>
-          <h4 id="user-detail-intro">Full stack Developer</h4>
+          <h2>I'm <span>Dheeraj</span></h2>
+          <h4 id="user-detail-intro">Full stack Web Developer</h4>
           <p>
             I am a Full-Stack developer from Raipur, Chhattisgarh, India. I am a
             Mechanical Engineer undergraduate from SSIPMT, Raipur. I am very
@@ -118,42 +146,116 @@
             applications & websites. I build WebApps and Websites using Node.js.
             Love to build Full-Stack clones of well known Websites.
           </p>
-          <h5><span>Age:</span> 24</h5>
+          <!-- <h5><span>Age:</span> 24</h5>
           <h5><span>Email:</span> dheeraj.pal19@gmail.com</h5>
           <h5><span>Phone:</span> +91 968-500-0978</h5>
-          <h5><span>Address:</span> Raipur, Chhattisgarh, India-492008</h5>
+          <h5><span>Address:</span> Raipur, Chhattisgarh, India-492008</h5> -->
         </div>
       </div>
     </div>
     <!------------------------ about starts------------------------------>
 
     <div id="skills">
-      <div class="skills-head"><i class="fa-solid fa-laptop-code"></i>Skills & <span>Abilities</span></div>
+      <div class="skills-head">
+        <i class="fa-solid fa-laptop-code"></i>Skills & <span>Abilities</span>
+      </div>
       <div class="skills-main">
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://img.icons8.com/color/48/000000/nodejs.png" alt=""><h3 class="skills-card-name">NodeJS</h3></div>
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://img.icons8.com/fluency/48/000000/node-js.png" alt=""><h3 class="skills-card-name">ExpressJS</h3></div>
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://img.icons8.com/color/48/000000/mongodb.png" alt=""><h3 class="skills-card-name">MongoDB</h3></div>
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt=""><h3 class="skills-card-name">HTML5</h3></div>
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://img.icons8.com/color/48/000000/css3.png" alt=""><h3 class="skills-card-name">CSS3</h3></div>
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt=""><h3 class="skills-card-name">JavaScript</h3></div>
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png" alt=""><h3 class="skills-card-name">Netlify</h3></div>
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://img.icons8.com/ios-filled/48/1169ae/jquery.png" alt=""><h3 class="skills-card-name">JQuery</h3></div>
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://img.icons8.com/color/48/000000/git.png" alt=""><h3 class="skills-card-name">Git VCS</h3></div>
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://img.icons8.com/glyph-neue/48/ffffff/github.png" alt=""><h3 class="skills-card-name">GitHub</h3></div>
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://img.icons8.com/color/48/000000/bootstrap.png" alt=""><h3 class="skills-card-name">Bootstrap</h3></div>
-        <div data-tilt class="skills-card"><img class="skills-card-img"
- src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png" alt=""><h3 class="skills-card-name">TailwindCSS</h3></div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">NodeJS</h3>
+        </div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png"
+            alt=""
+          />
+          <h3 class="skills-card-name">ExpressJS</h3>
+        </div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">MongoDB</h3>
+        </div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">HTML5</h3>
+        </div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">CSS3</h3>
+        </div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">JavaScript</h3>
+        </div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.iconscout.com/icon/free/png-512/netlify-3521601-2945045.png?f=avif&w=256"
+            alt=""
+          />
+          <h3 class="skills-card-name">Netlify</h3>
+        </div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.icon-icons.com/icons2/2415/PNG/512/npm_original_wordmark_logo_icon_146402.png"
+            alt=""
+          />
+          <h3 class="skills-card-name">NPM</h3>
+        </div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">Git VCS</h3>
+        </div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.icon-icons.com/icons2/936/PNG/512/github-logo_icon-icons.com_73546.png"
+            alt=""
+          />
+          <h3 class="skills-card-name">GitHub</h3>
+        </div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">Bootstrap</h3>
+        </div>
+        <div data-tilt class="skills-card">
+          <img
+            class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+            alt=""
+          />
+          <h3 class="skills-card-name">VSCode</h3>
+        </div>
       </div>
     </div>
     <div id="projects"></div>
@@ -167,3 +269,4 @@
 ></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="./script/tilt.jquery.js"></script>
+<script src="./script/particle.js"></script>
