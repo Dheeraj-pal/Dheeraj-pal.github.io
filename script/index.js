@@ -32,21 +32,16 @@ toggle.addEventListener("click", (e) => {
   const html = document.querySelector("html");
   if (html.classList.contains("dark")) {
     html.classList.remove("dark");
-    navimg.style.backgroundImage =
-      "url('https://images.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
-    bgimg.style.backgroundImage =
-      "url('https://images.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
+    navimg.style.backgroundImage = "url('../image/dark-mode.jpg')";
+    bgimg.style.backgroundImage = "url('../image/dark-mode.jpg')";
     e.target.innerHTML = "Light";
   } else {
     html.classList.add("dark");
-    navimg.style.backgroundImage =
-      "url('https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
-    bgimg.style.backgroundImage =
-      "url('https://images.pexels.com/photos/7130555/pexels-photo-7130555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')";
+    navimg.style.backgroundImage = "url('../image/light-mode.jpg')";
+    bgimg.style.backgroundImage = "url('../image/light-mode.jpg')";
     e.target.innerHTML = "Dark";
   }
 });
- 
 
 let docTitle = document.title;
 window.addEventListener("blur", () => {
@@ -56,15 +51,24 @@ window.addEventListener("focus", () => {
   document.title = docTitle;
 });
 
-
 function myFunction(x) {
-  if (x.matches) { // If media query matches
-    document.querySelector("#particles-js").style.height = "900px"
-  } else{
-    document.querySelector("#particles-js").style.height = "750px"
+  if (x.matches) {
+    // If media query matches
+    document.querySelector("#particles-js").style.height = "900px";
+  } else {
+    document.querySelector("#particles-js").style.height = "750px";
   }
 }
 
-var x = window.matchMedia("(max-width: 850px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+var x = window.matchMedia("(max-width: 850px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
+
+
+function netlify(e){
+  window.open(e, '_blank')
+}
+
+function git(e){
+  window.open(e, '_blank')
+}
