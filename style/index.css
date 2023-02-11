@@ -31,7 +31,7 @@ body {
   border-radius: 4px;
   padding: 6px 10px;
 }
-.toggle:hover{
+.toggle:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   scale: 105%;
 }
@@ -70,6 +70,7 @@ nav {
   margin-right: 80px;
 }
 #nav-ul > li {
+  z-index: 1;
   padding: 5px 10px 5px 10px;
   margin: 0 5px 0 5px;
   display: flex;
@@ -81,6 +82,7 @@ nav {
   text-decoration: none;
   /* color: #475569; */
   color: var(--secondary-color);
+  cursor: pointer;
 }
 #nav-ul > li > a:hover {
   color: rgb(0, 136, 255);
@@ -93,7 +95,7 @@ nav > h1 {
 .hamburger {
   display: none;
 }
-.cursor{
+.cursor {
   position: relative;
   display: flex;
   justify-content: end;
@@ -148,7 +150,7 @@ nav > h1 {
   margin-right: 20px;
   padding: 12px 15px;
   /* background-color: rgb(74, 87, 188); */
-  background-color:  var(--third);
+  background-color: var(--third);
   border-radius: 50%;
   font-size: 1.5rem;
   color: var(--secondary-color);
@@ -216,7 +218,7 @@ nav > h1 {
 .abtme > span {
   color: #dd6414;
 }
-#about{
+#about {
   border: 1px solid rgba(0, 0, 0, 0);
 }
 #about-main {
@@ -251,10 +253,10 @@ nav > h1 {
   -webkit-filter: grayscale(0%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.abt-txt{
+.abt-txt {
   margin-top: 50px;
 }
-.abt-txt>h2{
+.abt-txt > h2 {
   font-size: 2.5rem;
 }
 .abt-txt > h2 > span {
@@ -277,7 +279,6 @@ nav > h1 {
 #skills {
   user-select: none;
   border: 1px solid rgba(0, 0, 0, 0);
-
 }
 .skills-head {
   margin-top: 80px;
@@ -303,7 +304,7 @@ nav > h1 {
 }
 .skills-card {
   text-align: center;
-  background-color: rgb(74, 87, 188);
+  background-color: var(--third);
   border-radius: 10px;
   height: 150px;
   /* border: 1px solid; */
@@ -349,6 +350,7 @@ nav > h1 {
     display: block;
     cursor: pointer;
     margin-right: 100px;
+    z-index: 1;
   }
 
   .hamburger.active .bar:nth-child(2) {
