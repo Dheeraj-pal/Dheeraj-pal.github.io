@@ -12,6 +12,10 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
@@ -420,8 +424,11 @@
     <!-- ========================================   GitHub starts  ===================================================== -->
 
     <div id="github-stats">
+      <div class="skills-head">
+        <i class="fa-brands fa-github-alt"></i>GitHub <span>Statistics</span>
+      </div>
       <div class="container">
-        <h1 class="sub-title">GitHub Statistics</h1>
+        <h1 class="sub-title">GitHub Calender</h1>
         <div>
           <div class="calendar react-activity-calendar">
             <!-- Loading stuff -->
@@ -432,7 +439,7 @@
             <a href="https://github.com/dheeraj-pal">
               <img
                 id="github-streak-stats"
-                src="https://github-readme-streak-stats.herokuapp.com?user=themanvendra00&layout=compact&theme=dark"
+                src="https://github-readme-streak-stats.herokuapp.com?user=dheeraj-pal&theme=radical"
                 alt=""
               />
               <br />
@@ -440,14 +447,14 @@
 
               <img
                 id="github-stats-card"
-                src="https://github-readme-stats.vercel.app/api?username=themanvendra00&show_icons=true&line_height=27&count_private=true&title_color=f48c06&text_color=c9cacc&icon_color=2bbc8a&bg_color=000000"
+                src="https://github-readme-stats.vercel.app/api?username=dheeraj-pal&show_icons=true&line_height=27&count_private=true&title_color=f48c06&text_color=c9cacc&icon_color=2bbc8a&bg_color=141321"
               />
 
               <br />
               <br />
 
               <img
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=themanvendra00&theme=highcontrast"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=dheeraj-pal&theme=radical"
                 id="github-top-langs"
               />
             </a>
@@ -460,11 +467,61 @@
 
     <!------------------------ contact starts------------------------------>
 
-    <div id="contact"></div>
+      <footer class="footer" id="contact">
+        <h1>Contact</h1>
+        <div class="contact_me">
+          <p id="contact-phone">Contact Number - 9685000978</p>
+          <p>
+            <a  id="contact-email" href="mailto:dheeraj.pal19@gmail.com"
+              >Email Address- <span>dheeraj.pal19@gmail.com</span>
+            </a>
+          </p>
+          <p>Address- Raipur, Chhattisgarh</p>
+        
+          <div>
+            <a
+            class="project-link linkdk"
+            id="contact-linkedin"
+            target="_blank"
+            href="https://www.linkedin.com/in/dheerajpal19/"
+            ><i
+              style="font-size: 40px"
+              class="icon fa fa-linkedin"
+              aria-hidden="true"
+            ></i
+          ></a>
+
+          <a
+            class="project-link linkd"
+            id="contact-github"
+            target="_blank"
+            href="https://github.com/Dheeraj-pal"
+            ><i
+              style="font-size: 40px"
+              class="fa fa-github"
+              aria-hidden="true"
+            ></i
+          ></a>
+
+          <a
+            class="project-link linkd"
+            href="mailto:dheeraj.pal19@gmail.com"
+            target="_blank"
+            ><i
+              style="font-size: 40px"
+              class="icon fa fa-envelope"
+              aria-hidden="true"
+            ></i
+          ></a>
+          </div>
+        </div>
+      </footer>
+
 
     <!------------------------ contact ends------------------------------>
   </body>
 </html>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <script src="./script/index.js"></script>
 <script
   src="https://kit.fontawesome.com/e5a9c90922.js"
