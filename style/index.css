@@ -113,7 +113,7 @@ nav {
   cursor: pointer;
 }
 #nav-ul > li > a:hover {
-  color: rgb(0, 136, 255);
+  color: #d84924;
 }
 nav > h1 {
   margin-left: 100px;
@@ -689,7 +689,7 @@ canvas {
   margin-bottom: 20px;
 }
 
-.footer {
+#contact {
   height: 400px;
   width: 100%;
   color: var(--secondary-color);
@@ -697,7 +697,7 @@ canvas {
   background: var(--bgGrad);
   text-align: center;
 }
-.footer > div > p {
+#contact > div > p {
   color: var(--secondary-color);
 }
 .contact_me {
@@ -712,7 +712,7 @@ canvas {
 .contact_me > p > a > span {
   text-decoration: underline;
 }
-.footer > h1 {
+#contact > h1 {
   font-size: 2.5rem;
   color: #dd6414;
   padding-top: 20px;
@@ -723,7 +723,7 @@ canvas {
 .contact_me > p {
   margin-bottom: 20px;
 }
-.footer a,
+#contact a,
 h1 {
   text-decoration: none;
   margin: 0;
