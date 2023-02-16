@@ -354,6 +354,10 @@ nav > h1 {
   border: 1px solid rgba(0, 0, 0, 0);
 }
 
+#github-stats{
+  margin-bottom: 70px;
+}
+
 @media only screen and (max-width: 1150px){
   #home{
     display: flex;
@@ -383,6 +387,16 @@ nav > h1 {
 @media only screen and (max-width: 850px) {
   nav > h1 {
     margin-left: 30px;
+  }
+
+  .skills-main {
+    /* border: 1px solid; */
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-rows: auto;
+    gap: 10px;
   }
 
   #project-main {
@@ -479,7 +493,7 @@ nav > h1 {
     width: 300px;
   }
   #about {
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
   #about-main {
