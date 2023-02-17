@@ -19,8 +19,7 @@ function closeMenu() {
 
 function NewTab() {
   window.open(
-    "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed",
-    "_blank"
+    "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed"
   );
 }
 
@@ -45,7 +44,7 @@ toggle.addEventListener("click", (e) => {
 
 let docTitle = document.title;
 window.addEventListener("blur", () => {
-  document.title = "Please come back :'(";
+  document.title = "Come and have a look";
 });
 window.addEventListener("focus", () => {
   document.title = docTitle;
