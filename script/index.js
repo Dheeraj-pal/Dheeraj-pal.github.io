@@ -18,7 +18,7 @@ function closeMenu() {
 }
 
 function NewTab() {
-  window.open(
+  window.location.assign(
     "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed"
   );
 }
