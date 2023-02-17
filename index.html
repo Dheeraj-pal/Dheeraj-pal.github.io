@@ -25,8 +25,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/index.css" />
-    <link rel="icon" type="image/x-icon" href="./favicon/android-chrome-512x512.png">
-
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./favicon/android-chrome-512x512.png"
+    />
   </head>
   <body>
     <!------------------------ navbar starts------------------------------>
@@ -80,15 +83,17 @@
         <p id="content-p">
           I am a <span class="typing-text">Full Stack Web Developer</span>
         </p>
-        <a
-         id="resume-link-2"
-          onclick="NewTab()"
-          href="./resume/Dheeraj_Pal_Resume.pdf"
-          download="Dheeraj_Pal_Resume"
-          class="btn"
-          ><span>Resume</span>
-          <i class="fas fa-arrow-circle-down"></i>
-        </a>
+        <button id="resume-button-2">
+          <a
+            id="resume-link-2"
+            onclick="NewTab()"
+            href="./resume/Dheeraj_Pal_Resume.pdf"
+            download="Dheeraj_Pal_Resume"
+            class="btn"
+            ><span>Resume</span>
+            <i class="fas fa-arrow-circle-down"></i>
+          </a>
+        </button>
         <div class="socials">
           <ul class="social-icons">
             <li>
@@ -170,8 +175,6 @@
     </div>
     <!------------------------ about ends------------------------------>
 
-
-
     <!------------------------ skills start------------------------------>
 
     <div id="skills">
@@ -228,11 +231,7 @@
           <h3 class="skills-card-name">JavaScript</h3>
         </div>
         <div data-tilt class="skills-card redis">
-          <img
-            class="skills-card-img"
-            src="./svg/redis.svg"
-            alt=""
-          />
+          <img class="skills-card-img" src="./svg/redis.svg" alt="" />
           <h3 class="skills-card-name">Redis</h3>
         </div>
         <div data-tilt class="skills-card">
@@ -244,11 +243,7 @@
           <h3 class="skills-card-name">Netlify</h3>
         </div>
         <div data-tilt class="skills-card">
-          <img
-            class="skills-card-img"
-            src="./svg/npm.svg"
-            alt=""
-          />
+          <img class="skills-card-img" src="./svg/npm.svg" alt="" />
           <h3 class="skills-card-name">NPM</h3>
         </div>
         <div data-tilt class="skills-card">
@@ -286,7 +281,6 @@
       </div>
     </div>
     <!------------------------ skills ends------------------------------>
-
 
     <!------------------------ project starts------------------------------>
 
@@ -488,7 +482,7 @@
 
     <!------------------------ contact starts------------------------------>
 
-    <footer  id="contact">
+    <footer id="contact">
       <h1>Contact</h1>
       <div class="contact_me">
         <p id="contact-phone">Contact Number - 9685000978</p>
