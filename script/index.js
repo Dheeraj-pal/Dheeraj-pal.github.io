@@ -74,7 +74,7 @@ function git(e){
   window.open(e, '_blank')
 }
 
-GitHubCalendar(".calendar", "dheeraj-pal");
+// GitHubCalendar(".calendar", "dheeraj-pal");
 
-// or enable responsive functionality:
-GitHubCalendar(".calendar", "dheeraj-pal", { responsive: true });
+// // or enable responsive functionality:
+// GitHubCalendar(".calendar", "dheeraj-pal", { responsive: true });
