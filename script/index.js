@@ -17,6 +17,8 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
+
+
 function NewTab() {
   window.location.assign(
     "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed"
