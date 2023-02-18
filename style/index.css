@@ -58,15 +58,19 @@ body {
 
 .toggle {
   cursor: pointer;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: transparent;
+  color: var(--secondary-color);
   border: 0;
   border-radius: 4px;
-  padding: 6px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.toggle:hover {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  scale: 105%;
+.toggle>i{
+  font-size: 1.7rem;
+}
+.toggle:hover i{
+  scale: 110%;
 }
 .toggle:focus {
   outline: none;
@@ -96,7 +100,7 @@ nav {
 #nav-ul {
   display: flex;
   list-style: none;
-  margin-right: 80px;
+  margin-right: 70px;
 }
 #nav-ul > li {
   z-index: 1;
@@ -224,6 +228,10 @@ nav > h1 {
   color: white;
   text-decoration: none;
   font-size: 1rem;
+}
+#resume-button-2:hover i{
+  transform: translate3d(5px, 0px, 0px);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
 }
 .content > button:hover {
   background-color: #241277;
@@ -457,7 +465,7 @@ nav > h1 {
   .hamburger {
     display: block;
     cursor: pointer;
-    margin-right: 100px;
+    margin-right: 60px;
     z-index: 1;
   }
 
@@ -694,6 +702,11 @@ canvas {
   border-radius: 8px;
   border: 0;
 }
+.project-txt > div > button:hover{
+  cursor: pointer;
+  scale: 1.2;
+  border: 2px solid black;
+}
 .fa-html5 {
   color: #d84924;
 }
@@ -779,11 +792,11 @@ h1 {
   cursor: pointer;
 }
 
-#contact-linkedin {
+#contact-linkedin i{
   margin-right: 40px;
 }
 
-#contact-github {
+#contact-github i{
   margin-right: 40px;
 }
 

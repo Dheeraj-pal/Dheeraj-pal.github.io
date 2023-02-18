@@ -32,6 +32,9 @@ function NewTab() {
 // dark mode
 let bgimg = document.getElementById("particles-js");
 let navimg = document.getElementById("nav-menu");
+let dark = document.querySelector(".dark");
+let light = document.querySelector(".light");
+light.style.display = "none";
 const toggle = document.querySelector(".toggle");
 toggle.addEventListener("click", (e) => {
   const html = document.querySelector("html");
@@ -39,12 +42,14 @@ toggle.addEventListener("click", (e) => {
     html.classList.remove("dark");
     navimg.style.backgroundImage = "url('../image/dark-mode.jpg')";
     bgimg.style.backgroundImage = "url('../image/dark-mode.jpg')";
-    e.target.innerHTML = "Light";
+    light.style.display = "none";
+    dark.style.display = "block";
   } else {
     html.classList.add("dark");
     navimg.style.backgroundImage = "url('../image/light-mode.jpg')";
     bgimg.style.backgroundImage = "url('../image/light-mode.jpg')";
-    e.target.innerHTML = "Dark";
+    dark.style.display = "none";
+    light.style.display = "block";
   }
 });
 
@@ -69,13 +74,12 @@ var x = window.matchMedia("(max-width: 850px)");
 myFunction(x); // Call listener function at run time
 x.addListener(myFunction); // Attach listener function on state changes
 
-
-function netlify(e){
-  window.open(e, '_blank')
+function netlify(e) {
+  window.open(e, "_blank");
 }
 
-function git(e){
-  window.open(e, '_blank')
+function git(e) {
+  window.open(e, "_blank");
 }
 
 GitHubCalendar(".calendar", "dheeraj-pal");
