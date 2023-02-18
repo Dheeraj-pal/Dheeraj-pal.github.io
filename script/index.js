@@ -17,13 +17,17 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
-
-
 function NewTab() {
-  window.location.assign(
-    "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed"
+  window.open(
+    "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed",
+    "_blank"
   );
 }
+// function NewTab() {
+//   window.location.assign(
+//     "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed"
+//   );
+// }
 
 // dark mode
 let bgimg = document.getElementById("particles-js");
@@ -74,7 +78,7 @@ function git(e){
   window.open(e, '_blank')
 }
 
-// GitHubCalendar(".calendar", "dheeraj-pal");
+GitHubCalendar(".calendar", "dheeraj-pal");
 
-// // or enable responsive functionality:
-// GitHubCalendar(".calendar", "dheeraj-pal", { responsive: true });
+// or enable responsive functionality:
+GitHubCalendar(".calendar", "dheeraj-pal", { responsive: true });
