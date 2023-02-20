@@ -17,6 +17,7 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
+let resume = document.getElementById("resume-link-2").addEventListener("click", NewTab)
 function NewTab() {
   window.open(
     "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed",
