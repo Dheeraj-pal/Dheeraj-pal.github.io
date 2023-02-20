@@ -16,7 +16,7 @@ function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }
-let resume1 = document.getElementById("resume-link-1").addEventListener("click", NewTab)
+let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
 let resume2 = document.getElementById("resume-link-2").addEventListener("click", NewTab)
 function NewTab() {
   window.location.assign(
