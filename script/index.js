@@ -20,8 +20,7 @@ let resume1 = document.getElementById("resume-button-1").addEventListener("click
 let resume2 = document.getElementById("resume-link-2").addEventListener("click", NewTab)
 function NewTab() {
   window.location.assign(
-    "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed",
-    "_blank"
+    "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed"
   );
 }
 
