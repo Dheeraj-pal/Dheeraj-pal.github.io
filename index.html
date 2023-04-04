@@ -77,9 +77,13 @@
 
     <!------------------------ navbar ends------------------------------>
 
+    <!------------------------ particles start------------------------------>
+
     <div id="particles-js"></div>
     <div class="count-particles"></div>
     <script src="./script/particle.min.js"></script>
+
+    <!------------------------ particles ends------------------------------>
 
     <!------------------------ home starts------------------------------>
     <div id="home">
@@ -259,6 +263,33 @@
           data-tilt-max-glare="0.5"
           class="skills-card"
         >
+          <img class="skills-card-img" src="./svg/MySQL-Dark.svg" alt="" />
+          <h3 class="skills-card-name">MySQL</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card redis"
+        >
+          <img class="skills-card-img" src="./svg/redis.svg" alt="" />
+          <h3 class="skills-card-name">Redis</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img class="skills-card-img" src="./svg/npm.svg" alt="" />
+          <h3 class="skills-card-name">NPM</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
           <img
             class="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -296,32 +327,19 @@
           data-tilt
           data-tilt-glare
           data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img class="skills-card-img" src="./svg/TypeScript.svg" alt="" />
+          <h3 class="skills-card-name">TypeScript</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
           class="skills-card redis"
         >
-          <img class="skills-card-img" src="./svg/redis.svg" alt="" />
-          <h3 class="skills-card-name">Redis</h3>
-        </div>
-        <div
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.5"
-          class="skills-card"
-        >
-          <img
-            class="skills-card-img"
-            src="https://cdn.iconscout.com/icon/free/png-512/netlify-3521601-2945045.png?f=avif&w=256"
-            alt=""
-          />
-          <h3 class="skills-card-name">Netlify</h3>
-        </div>
-        <div
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.5"
-          class="skills-card"
-        >
-          <img class="skills-card-img" src="./svg/npm.svg" alt="" />
-          <h3 class="skills-card-name">NPM</h3>
+          <img class="skills-card-img" src="./svg/AWS.svg" alt="" />
+          <h3 class="skills-card-name">AWS</h3>
         </div>
         <div
           data-tilt
@@ -370,6 +388,19 @@
         >
           <img
             class="skills-card-img"
+            src="https://cdn.iconscout.com/icon/free/png-512/netlify-3521601-2945045.png?f=avif&w=256"
+            alt=""
+          />
+          <h3 class="skills-card-name">Netlify</h3>
+        </div>
+        <div
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+          class="skills-card"
+        >
+          <img
+            class="skills-card-img"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
             alt=""
           />
@@ -386,6 +417,90 @@
         <i class="fa-solid fa-paperclip"></i>Featured <span>Projects</span>
       </div>
       <div id="project-main">
+        <div
+          class="project-card"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+        >
+          <div class="proj-sec">
+            <img
+              style="height: 200px; margin: auto"
+              src="./svg/snips&spikes.png"
+              alt=""
+            />
+          </div>
+          <div class="project-txt">
+            <h3 class="project-title">Hair salon <span>app. booking</span></h3>
+            <p class="project-description">
+              An online platform for scheduling hair salon appointments,
+              offering a range of services and flexible booking options.
+            </p>
+            <h5 class="project-tech-stack">
+              Tech Stack - <i class="fa-brands fa-html5"></i
+              ><i class="fa-brands fa-css3-alt"></i
+              ><i class="fa-brands fa-square-js"></i
+              ><i class="fa-brands fa-node-js"></i
+              ><i class="fa-brands fa-envira"></i><span>ex</span>
+            </h5>
+            <div>
+              <button
+                class="project-deployed-link"
+                onclick="netlify(`https://snipsandspikes.netlify.app/`)"
+              >
+                <i class="fa-solid fa-link"></i>
+              </button>
+              <button
+                class="project-github-link"
+                onclick="git(`https://github.com/DhaanuI/Snips-Spikes-Hair-Salon-booking-website`)"
+              >
+                <i class="fa-brands fa-github"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="project-card"
+          data-tilt
+          data-tilt-glare
+          data-tilt-max-glare="0.5"
+        >
+          <div class="proj-sec">
+            <img
+              style="height: 200px; margin: auto"
+              src="./svg/DevQuery.png"
+              alt=""
+            />
+          </div>
+          <div class="project-txt">
+            <h3 class="project-title">DevQuery <span>Clone</span></h3>
+            <p class="project-description">
+              DevQuery is a programming Q&A site where users can ask and answer
+              technical questions and earn reputation points.
+            </p>
+            <h5 class="project-tech-stack">
+              Tech Stack - <i class="fa-brands fa-html5"></i
+              ><i class="fa-brands fa-css3-alt"></i
+              ><i class="fa-brands fa-square-js"></i
+              ><i class="fa-brands fa-node-js"></i
+              ><i class="fa-brands fa-envira"></i><span>ex</span>
+            </h5>
+            <div>
+              <button
+                class="project-deployed-link"
+                onclick="netlify(`https://rococo-rolypoly-a926ac.netlify.app/`)"
+              >
+                <i class="fa-solid fa-link"></i>
+              </button>
+              <button
+                class="project-github-link"
+                onclick="git(`https://github.com/RAJKUMARSHRIVASH/native-minister-9066`)"
+              >
+                <i class="fa-brands fa-github"></i>
+              </button>
+            </div>
+          </div>
+        </div>
         <div
           class="project-card"
           data-tilt
@@ -462,87 +577,6 @@
               <button
                 class="project-github-link"
                 onclick="git(`https://github.com/Dheeraj-pal/angry-crow-9702`)"
-              >
-                <i class="fa-brands fa-github"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="project-card"
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.5"
-        >
-          <div class="proj-sec">
-            <img
-              style="height: 200px; margin: auto"
-              src="./svg/airtable.png"
-              alt=""
-            />
-          </div>
-          <div class="project-txt">
-            <h3 class="project-title">Airtable <span>Clone</span></h3>
-            <p class="project-description">
-              A platform where teams, data, and processes are seamlessly
-              integrated through apps that can be created by anyone.
-            </p>
-            <h5 class="project-tech-stack">
-              Tech Stack - <i class="fa-brands fa-html5"></i
-              ><i class="fa-brands fa-css3-alt"></i
-              ><i class="fa-brands fa-square-js"></i>
-            </h5>
-            <div>
-              <button
-                class="project-deployed-link"
-                onclick="netlify(`https://eko-system.netlify.app/`)"
-              >
-                <i class="fa-solid fa-link"></i>
-              </button>
-              <button
-                class="project-github-link"
-                onclick="git(`https://github.com/Dheeraj-pal/aloof-substance-9792`)"
-              >
-                <i class="fa-brands fa-github"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="project-card"
-          data-tilt
-          data-tilt-glare
-          data-tilt-max-glare="0.5"
-        >
-          <div class="proj-sec">
-            <img
-              style="height: 200px; margin: auto"
-              src="./svg/masai_chatApp.png"
-              alt=""
-            />
-          </div>
-          <div class="project-txt">
-            <h3 class="project-title">Masai <span>ChatApp</span></h3>
-            <p class="project-description">
-              online chatting application with one-to-one or group chatting
-              capabilities, real-time responses, and many other features.
-            </p>
-            <h5 class="project-tech-stack">
-              Tech Stack - <i class="fa-brands fa-html5"></i
-              ><i class="fa-brands fa-css3-alt"></i
-              ><i class="fa-brands fa-square-js"></i
-              ><i class="fa-brands fa-node-js"></i><span>ex</span>
-            </h5>
-            <div>
-              <button
-                class="project-deployed-link"
-                onclick="netlify(`https://eko-system.netlify.app/`)"
-              >
-                <i class="fa-solid fa-link"></i>
-              </button>
-              <button
-                class="project-github-link"
-                onclick="git(`https://github.com/Dheeraj-pal/aloof-substance-9792`)"
               >
                 <i class="fa-brands fa-github"></i>
               </button>
