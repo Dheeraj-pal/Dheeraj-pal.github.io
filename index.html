@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Dheeraj Pal</title>
     <script
       src="https://kit.fontawesome.com/e5a9c90922.js"
@@ -35,22 +36,13 @@
     <!------------------------ navbar starts------------------------------>
     <div id="nav-menu">
       <nav>
-        <h1>Dheeraj</h1>
-        <ul id="nav-ul">
+        <h1 data-aos="fade-down">Dheeraj</h1>
+        <ul data-aos="fade-down" id="nav-ul">
           <li class="nav-link home"><a class="active" href="#home">Home</a></li>
           <li class="nav-link about"><a href="#about">About</a></li>
           <li class="nav-link skills"><a href="#skills">Skills</a></li>
           <li class="nav-link projects"><a href="#projects">Projects</a></li>
           <li class="nav-link contact"><a href="#contact">Contact</a></li>
-          <!-- <li class="nav-link resume">
-            <a
-              id="resume-button-1"
-              href="Dheeraj_Pal_Resume.pdf"
-              download="Dheeraj_Pal_Resume.pdf"
-              target="_blank"
-              >Resume<i class="fas fa-arrow-circle-down"></i
-            ></a>
-          </li> -->
           <li id="resume-button-1" class="nav-link resume">
             <a
               href="Dheeraj_Pal_Resume.pdf"
@@ -67,7 +59,7 @@
           <span class="bar"></span>
         </div>
       </nav>
-      <div class="cursor">
+      <div data-aos="fade-down" class="cursor">
         <button class="toggle">
           <i class="fa-solid fa-moon dark"></i
           ><i class="fa-solid fa-sun light"></i>
@@ -87,7 +79,7 @@
 
     <!------------------------ home starts------------------------------>
     <div id="home">
-      <div class="content">
+      <div data-aos="fade-right" class="content">
         <h2 id="user-detail-name">
           Hi There,<br />
           I'm Dheeraj <span>Pal</span>
@@ -95,16 +87,6 @@
         <p id="content-p">
           I am a <span class="typing-text">Full Stack Web Developer</span>
         </p>
-        <!-- <button id="resume-button-2">
-          <a
-            id="resume-link-2"
-            href="./resume/Dheeraj_Pal_Resume.pdf"
-            download="Dheeraj_Pal_Resume.pdf"
-            class="btn"
-            ><span>Resume</span>
-            <i class="fas fa-arrow-circle-down"></i>
-          </a>
-        </button> -->
         <button id="resume-button-2">
           <a
             href="Dheeraj_Pal_Resume.pdf"
@@ -115,7 +97,7 @@
             ><span>Resume</span> <i class="fas fa-arrow-circle-down"></i
           ></a>
         </button>
-        <div class="socials">
+        <div data-aos="fade-right" class="socials">
           <ul class="social-icons">
             <li>
               <a
@@ -157,6 +139,7 @@
         </div>
       </div>
       <div
+        data-aos="fade-left"
         class="home-image"
         data-tilt
         data-tilt-glare
@@ -174,7 +157,12 @@
 
     <!------------------------ about starts------------------------------>
 
-    <div id="about" class="about section">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      id="about"
+      class="about section"
+    >
       <div class="abtme">
         <i class="fa-solid fa-user"></i>About <span>Me</span>
       </div>
@@ -213,7 +201,12 @@
 
     <!------------------------ skills start------------------------------>
 
-    <div id="skills">
+    <div
+      data-aos="fade-up"
+      data-aos-offset="0"
+      data-aos-anchor-placement="center-bottom"
+      id="skills"
+    >
       <div class="skills-head">
         <i class="fa-solid fa-laptop-code"></i>Skills & <span>Abilities</span>
       </div>
@@ -412,7 +405,11 @@
 
     <!------------------------ project starts------------------------------>
 
-    <div id="projects">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      id="projects"
+    >
       <div class="skills-head">
         <i class="fa-solid fa-paperclip"></i>Featured <span>Projects</span>
       </div>
@@ -589,7 +586,11 @@
 
     <!------------------------ GitHub starts ------------------------------>
 
-    <div id="github-stats">
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+      id="github-stats"
+    >
       <div class="skills-head">
         <i class="fa-brands fa-github-alt"></i>GitHub <span>Statistics</span>
       </div>
@@ -632,7 +633,11 @@
 
     <!------------------------ contact starts------------------------------>
 
-    <footer id="contact">
+    <footer
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom"
+      id="contact"
+    >
       <h1>Contact</h1>
       <div class="contact_me">
         <p id="contact-phone">Contact Number - 9685000978</p>
@@ -683,6 +688,12 @@
     </footer>
 
     <!------------------------ contact ends------------------------------>
+
+    <!-- ----------------------------- AOS-Script ------------------------------ -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 <script src="./script/index.js"></script>
