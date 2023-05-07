@@ -80,9 +80,15 @@ html {
   scroll-behavior: smooth;
 }
 #nav-menu {
-  background-image: url("https://images.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  /* background-image: url("https://images.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: 100vw; */
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.15);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
   color: var(--secondary-color);
   position: fixed;
   z-index: 1;
@@ -115,9 +121,12 @@ nav {
   text-decoration: none;
   color: var(--secondary-color);
   cursor: pointer;
+  font-weight: 700;
+  text-shadow: var(--primary-color) 1px 0 10px;
 }
 #nav-ul > li > a:hover {
   color: #d84924;
+  text-shadow: 0px 0px;
 }
 nav > h1 {
   margin-left: 100px;
@@ -838,4 +847,15 @@ h1 {
 }
 .contact_me > div > a > i {
   transform: translate3d(0px, -8px, -8px);
+}
+
+@media only screen and (max-width: 368px) {
+  .home-image {
+    width: 200px;
+    height: 200px;
+  }
+  .home-image .home-img {
+    width: 200px;
+    height: 200px;
+  }
 }

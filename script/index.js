@@ -18,13 +18,7 @@ function closeMenu() {
 }
 let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
 let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
-// function NewTab() {
-//   window.location.assign(
-//     "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed","_blank"
-//   );
-// }
 
-// let resume = document.getElementById("resume-link-2").addEventListener("click", NewTab)
 function NewTab() {
   window.open(
     "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed",
@@ -33,15 +27,9 @@ function NewTab() {
 }
 
 
-// function NewTab() {
-//   window.location.assign(
-//     "https://drive.google.com/file/d/17kbXv9IRArX26dObGs4mIl_FxLO3XYXs/view?usp=sharingpushed"
-//   );
-// }
-
 // dark mode
 let bgimg = document.getElementById("particles-js");
-let navimg = document.getElementById("nav-menu");
+// let navimg = document.getElementById("nav-menu");
 let dark = document.querySelector(".dark");
 let light = document.querySelector(".light");
 light.style.display = "none";
@@ -50,13 +38,13 @@ toggle.addEventListener("click", (e) => {
   const html = document.querySelector("html");
   if (html.classList.contains("dark")) {
     html.classList.remove("dark");
-    navimg.style.backgroundImage = "url('../image/dark-mode.jpg')";
+    // navimg.style.backgroundImage = "url('../image/dark-mode.jpg')";
     bgimg.style.backgroundImage = "url('../image/dark-mode.jpg')";
     light.style.display = "none";
     dark.style.display = "block";
   } else {
     html.classList.add("dark");
-    navimg.style.backgroundImage = "url('../image/light-mode.jpg')";
+    // navimg.style.backgroundImage = "url('../image/light-mode.jpg')";
     bgimg.style.backgroundImage = "url('../image/light-mode.jpg')";
     dark.style.display = "none";
     light.style.display = "block";
