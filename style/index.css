@@ -103,6 +103,9 @@ nav {
   height: 60px;
   width: 100vw;
 }
+#nav-ul > li > a:is(:focus) {
+  color: #d84924;
+}
 #nav-ul {
   display: flex;
   list-style: none;
@@ -122,7 +125,7 @@ nav {
   color: var(--secondary-color);
   cursor: pointer;
   font-weight: 700;
-  text-shadow: var(--primary-color) 1px 0 10px;
+  /* text-shadow: var(--primary-color) 1px 0 10px; */
 }
 #nav-ul > li > a:hover {
   color: #d84924;
