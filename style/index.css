@@ -83,9 +83,7 @@ html {
   /* background-image: url("https://images.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-repeat: no-repeat;
   background-size: 100vw; */
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.15);
-  /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.2px);
   -webkit-backdrop-filter: blur(5.2px);
@@ -297,7 +295,6 @@ nav > h1 {
 #about {
   border: 1px solid rgba(0, 0, 0, 0);
   padding-top: 20px;
-  
 }
 #about-main {
   display: flex;
@@ -505,6 +502,11 @@ nav > h1 {
     cursor: pointer;
     margin-right: 60px;
     z-index: 1;
+    padding-right: 10px;
+  }
+
+  .hamburger>span{
+    background-color: var(--primary-color);
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -695,18 +697,17 @@ canvas {
   background-color: var(--third);
   padding: 10px 15px;
   border-radius: 0 0 10px 10px;
+  height: 160px;
 }
 .project-card {
   border-radius: 10px;
   background-color: var(--third);
   height: auto;
   width: 250px;
-  /* border: 1px solid; */
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .proj-sec > img {
-  /* border: 1px solid; */
   border-radius: 10px 10px 0 0;
   width: 100%;
   height: auto;
@@ -730,8 +731,7 @@ canvas {
   color: #dd6414;
 }
 .project-txt > div {
-  margin-top: 10px;
-  /* border: 1px solid; */
+  padding-top: 10px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
