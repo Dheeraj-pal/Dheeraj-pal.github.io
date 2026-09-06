@@ -1,0 +1,359 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-hand: var(--font-patrick-hand), "Comic Sans MS", cursive;
+  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  /* Target site uses the Tailwind v3 radius scale off --radius: 0.5rem */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2rem;
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+/* ---------------------------------------------------------------------------
+ * Verbatim custom CSS from the target's stylesheet, with asset URLs repointed
+ * to this project's namespaced public directory.
+ * ------------------------------------------------------------------------ */
+@theme inline {
+  --font-hand: var(--font-patrick-hand), "Comic Sans MS", cursive;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/*
+ * The crowd walk. One crossing takes the same 9s for every figure, so they all
+ * share a speed; the per-walker head start is set inline as an animation-delay.
+ * ease-in-out is what makes a walker creep at the edges of the frame and stride
+ * through the middle, and it is why sampling the crowd at any one instant reads
+ * as twenty different speeds when there is only ever one.
+ *
+ * The endpoints arrive as custom properties because they differ per walker:
+ * which edge it starts from, and how wide its box is.
+ *
+ * `backwards` fill is load-bearing. Without it an element sits at its static
+ * position — translateX(0), parked in frame at the left edge — until its delay
+ * elapses, so a staggered crowd stacks up motionless and peels off one by one.
+ * The fill holds each walker at its `from` keyframe instead, off-frame, which is
+ * what the target gets from framer-motion's `initial`.
+ */
+@keyframes walk {
+  from {
+    transform: translateX(var(--walk-from));
+  }
+  to {
+    transform: translateX(var(--walk-to));
+  }
+}
+
+/* Bob under the walk: 0.8s each way, so a full up-and-down is 1.6s. */
+@keyframes bob {
+  from {
+    bottom: -50px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+.walk {
+  animation: walk 9s ease-in-out infinite backwards;
+}
+
+.bob,
+.bob-alt {
+  animation: bob 0.8s ease-in-out infinite alternate backwards;
+}
+
+/* The highlighted walker bobs against the crowd, half a cycle out of step. */
+.bob-alt {
+  animation-direction: alternate-reverse;
+}
+
+/* Sprite sheet of 50 crowd characters (10 cols x 5 rows of 240x322 cells). */
+.char {
+  background-image: url(/images/people.png);
+}
+.main-char {
+  background-image: url(/images/me.png);
+}
+.hero-bg {
+  background-image: url(/images/hero-bg.svg);
+}
+.hero-bg-lg {
+  background-image: url(/images/hero-bg-lg.svg);
+}
+.footer-bg {
+  background-image: url(/images/footer-bg.svg);
+}
+/*
+ * Hovering one card fades its neighbours to 50%. Shared by the two project
+ * grids and the experience list, which pull focus identically on the target: it
+ * drives them from a `hovering` index per section — hovered card `opacity-100`,
+ * the rest `opacity-50`, no class at all when nothing is hovered. These are the
+ * same three states from a sibling selector, so no section needs the state, and
+ * the grids stay server components.
+ *
+ * `:has()` rather than `.focus-group:hover` on purpose: the container is
+ * hovered while the cursor sits in the gap *between* cards, where no card is
+ * `:hover` and every one of them would dim. Each card brings its own
+ * `transition-opacity`/`transition-all`, so the fade rides that 150ms.
+ */
+.focus-group:has(.focus-card:hover) .focus-card:not(:hover) {
+  opacity: 0.5;
+}
+
+.project-card {
+  background: #fff;
+  background:
+    linear-gradient(160deg, #fff, #f6f4f2 56%, hsla(27, 35%, 83%, 0.5)),
+    url(/images/noise.svg);
+}
+
+/* Animated wireframe globe used in the "Located in ..." pill. */
+.digital-ball {
+  width: 4.2em;
+  height: 4.2em;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.digital-ball .overlay {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.globe {
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 0.8em;
+  border-radius: 50%;
+  overflow: hidden;
+  will-change: transform;
+}
+.globe-wrap {
+  display: block;
+  transform: rotate(30deg);
+  animation: globe 5.4s cubic-bezier(0.35, 0, 0.65, 1) infinite;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 0.125em #fff;
+  position: relative;
+}
+.circle,
+.globe-wrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0.1em 0 0 0.08em #fff;
+  animation: circle1 2.7s linear infinite;
+  font-size: 0.75em;
+}
+.globe :first-child {
+  animation-delay: -1.8s;
+}
+.globe :nth-child(2) {
+  animation-delay: -0.9s;
+}
+.circle-hor {
+  border-radius: 50%;
+  height: 55%;
+  box-shadow: inset 0 0 0 0.15em #fff;
+}
+.circle-hor,
+.circle-hor-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  font-size: 0.75em;
+}
+.circle-hor-middle {
+  border-radius: 0;
+  height: 0.15em;
+  background: #fff;
+}
+@keyframes globe {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
+@keyframes circle1 {
+  0% {
+    border-radius: 50%;
+    box-shadow: inset 0.1em 0 0 0.08em #fff;
+    width: 100%;
+  }
+  49% {
+    border-radius: 50%;
+    box-shadow: inset 0.1em 0 0 0.08em #fff;
+    background: transparent;
+  }
+  50% {
+    border-radius: 0;
+    width: 0.175em;
+    background: #fff;
+  }
+  51% {
+    border-radius: 50%;
+    box-shadow: inset -0.1em 0 0 0.08em #fff;
+    background: transparent;
+  }
+  to {
+    border-radius: 50%;
+    box-shadow: inset -0.1em 0 0 0.08em #fff;
+    width: 100%;
+  }
+}
+
+/* Hamburger: two 1px bars that rotate into an X when .burgerActive is set. */
+.burger:after,
+.burger:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  transition: transform 0.3s;
+}
+.burgerActive:after {
+  transform: rotate(45deg);
+  top: -1px !important;
+}
+.burgerActive:before {
+  transform: rotate(-45deg);
+  top: 1px !important;
+}
